@@ -1,0 +1,57 @@
+/* Thiết lập chung và reset cơ bản */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Định dạng thanh điều hướng */
+nav {
+    margin: 15px 0 30px 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #003366;
+}
+
+/* Định dạng khu vực chứa các cột */
+section {
+    margin-top: 20px;
+    /* Xử lý khoảng trắng thừa giữa các thẻ inline-block nếu cần */
+    font-size: 0; 
+}
+
+.box {
+    display: inline-block;
+    width: 30%;
+    max-width: 300px;
+    padding: 30px 20px;
+    background-color: lightblue;
+    margin: 10px 1.5%;
+    font-size: 16px; /* Đặt lại kích thước chữ sau khi section font-size: 0 */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng chân trang */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
